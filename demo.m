@@ -8,7 +8,7 @@ fullFileName='./data/fish.png';
 img = im2double(imread(fullFileName));
 
 % Resize a large image to a small image for fast speed. Please uncomment the following code to use
-% img=imresize(img,0.5);
+img=imresize(img,0.5);
 
 %% Parameter setting
 % Note: there are two key parameters lambda_d and lambda_s. If you
@@ -42,6 +42,6 @@ subplot(1,3,3);imshow(highlight,[]);title('highlight image');
 % if ~exist(outputDir,'dir')
 %     mkdir(outputDir)
 % end
-% imwrite(input,[outputDir sprintf('%s.png',baseFileName)]);
-% imwrite(X_d,[outputDir sprintf('%s-diffuse.png',baseFileName)]);
-% imwrite(X_s,[outputDir sprintf('%s-highlight.png',baseFileName)]);
+% imwrite(img,[outputDir sprintf('%s.png',baseFileName)]);
+% imwrite(diffuse,[outputDir sprintf('%s-diffuse.png',baseFileName)]);
+% imwrite(highlight,[outputDir sprintf('%s-highlight.png',baseFileName)]);
