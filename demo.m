@@ -29,7 +29,7 @@ gamma=[1/3;1/3;1/3]; % illumination color value. It's white illumination color (
 ITERMAX=50; % number of interation for optimization
 
 % Computing diffuse and highlight layers
-[diffuse,highlight]=specular_highlight_removal(img);
+[diffuse,highlight]=SHR(img);
 
 %% Show results
 figure(1);
