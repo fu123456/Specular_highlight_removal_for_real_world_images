@@ -39,6 +39,9 @@ subplot(1,3,3);imshow(highlight,[]);title('highlight image');
 
 % %% Save results
 % outputDir='./output/';
+% if ~exist(outputDir,'dir')
+%     mkdir(outputDir)
+% end
 % imwrite(input,[outputDir sprintf('%s.png',baseFileName)]);
 % imwrite(X_d,[outputDir sprintf('%s-diffuse.png',baseFileName)]);
 % imwrite(X_s,[outputDir sprintf('%s-highlight.png',baseFileName)]);
