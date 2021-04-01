@@ -1,4 +1,4 @@
-# Specular_highlight_removal_for_real_world_images
+# Specular Highlight Removal for Real_World Images
 
 Note: if you have any questions, please contact me by Email: xyzgfu@gmail.com
 
